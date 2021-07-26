@@ -10,6 +10,6 @@ var x = setInterval(function() { // 오늘 날짜 등록
     var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var s = Math.floor((distance % (1000 * 60)) / 1000); //id가 d-day인 HTML코드에 내용 삽입
 
-    document.getElementById("d-day").innerHTML = "SEED's BIRTH <br><br>" + h + "시간 " + m + "분 " + s + "초" ;
+    document.getElementById("d-day").innerHTML = "SEED's BIRTH <br><br>" + h + "H " + m + "M " + s + "S" ;
 
 });
