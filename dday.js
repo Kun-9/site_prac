@@ -11,6 +11,6 @@ var x = setInterval(function() { // 오늘 날짜 등록
     var s = Math.floor((distance % (1000 * 60)) / 1000); //id가 d-day인 HTML코드에 내용 삽입
     if(h < 0&& m < 0&& s < 0) document.getElementById("d-day").innerHTML = "D-DAY <br><br> ㅎ 유섭이 생축 ㅎ" ;
     else {
-        document.getElementById("d-day").innerHTML = "SEED's BIRTH REMAIN <br><br>" + h + "H " + m + "M " + s + "S";
+        document.getElementById("d-day").innerHTML = "SEED's BIRTHDAY REMAIN <br><br>" + h + "H " + m + "M " + s + "S";
     }
 });
