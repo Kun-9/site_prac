@@ -1,5 +1,5 @@
 //디데이 종료 일자 설정
-var countDownDate = new Date("July 28, 2021 00:00:00").getTime();
+var countDownDate = new Date("July 28, 2022 00:00:00").getTime();
 // 1초마다 갱신되도록 함수 생성,실행
 var x = setInterval(function() { // 오늘 날짜 등록
 
@@ -9,8 +9,8 @@ var x = setInterval(function() { // 오늘 날짜 등록
     var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var s = Math.floor((distance % (1000 * 60)) / 1000); //id가 d-day인 HTML코드에 내용 삽입
-    if(h < 0&& m < 0&& s < 0) document.getElementById("d-day").innerHTML = "D-DAY <br><br> ㅎ 유섭이 생축 ㅎ" ;
+    if( d >= 364 ) document.getElementById("d-day").innerHTML = "D-DAY <br><br> ㅎ 유섭이 생축 ㅎ" ;
     else {
-        document.getElementById("d-day").innerHTML = "SEED's BIRTHDAY D-DAY <br><br>" + h + "H " + m + "M " + s + "S";
+        document.getElementById("d-day").innerHTML = "SEED's NEXT BIRTHDAY <br><br>" + d + "D" + h + "H " + m + "M " + s + "S";
     }
 });
